@@ -2,6 +2,8 @@ import pyowm
 
 owm = pyowm.OWM('de8aae07a72e6bd6aae1977b9264c04b')
 
+python setup.py test -s tests.unit
+
 # Will it be sunny tomorrow at this time in Milan (Italy) ?
 forecast = owm.daily_forecast("Milan,it")
 tomorrow = pyowm.timeutils.tomorrow()
